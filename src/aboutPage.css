@@ -1,0 +1,409 @@
+.benefit-title>p{
+    position: relative;
+    top: 0px;
+}
+
+.icon>img{
+    margin-top: 0px;
+}
+#list-container{
+    padding: 50px;
+    background: linear-gradient(0deg, rgba(240,248,255,1) 0%, rgb(165, 4, 141) 5%, rgba(55,159,10,1) 68%, rgba(255,215,0,1) 94%);
+}
+.list-item{
+    padding-top: 20px;
+}
+
+#about-page hr{
+    margin: 0px;
+}
+.vr{
+    width: 1px;
+}
+.bg-img{
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    overflow:hidden;
+    object-fit: cover;
+}
+
+#about-banner{
+    position: relative;
+    color: white;
+    padding: 0px;
+    
+}
+#about-info > h3{
+    text-align: center;
+    background-color: gold;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 2px solid rgba(55,159,10,1);
+    color: rgba(55,159,10,1);
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.list-item.row{
+    padding-bottom: 40px;
+}
+
+#mission-statement{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background: rgb(6,119,2);
+    background: linear-gradient(90deg, rgba(6,119,2,0.5) 0%, rgba(5,56,1,0.7) 50%, rgba(6,119,2,0.5) 100%);
+    color: white;
+    padding: 10px 0px ;
+    text-align: center;
+    font-family: monospace;
+}
+.bolder{
+    font-weight: lighter;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.col-sm-4{
+    text-align: center;
+}
+.col-sm-4 > p{
+    margin-bottom: 0px;;
+}
+
+ul{
+    list-style-type: none;
+}
+.list-item{
+    height: auto;
+    text-align: left;
+}
+.list-item>div>.benefit-title{
+    text-decoration: 8px rgb(103, 3, 103) underline;
+    text-underline-offset: 10px;
+    font-family:sans-serif;
+    width: auto;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.item {
+    display: block;
+    clear: both;
+    counter-increment: list;
+    padding-bottom: 4rem;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+}
+
+.img-smaller{
+    width: 50px;
+    margin: auto;
+    opacity: 1.2;
+}
+
+.teardrop {
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: white;
+    font-weight: bold;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    background: purple linear-gradient(to bottom right, purple 25%, green);
+    text-shadow: 0 0 2px purple;
+    border-radius: 0px 50% 50% 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+    box-shadow: 2px 6px 6px rgb(128,128,128,0.3);
+}
+
+.bg-gold-green{
+    position:relative;
+}
+.bg-gold-green::before{
+    content: "";
+      background-image: url('~/public/mango-skin.jpg');
+      background-size: 80px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.1;
+}
+.bg-gold-green>h4{
+    background-image: linear-gradient(0deg, rgba(251,254,251,1) 30%, rgba(4,3,0,1) 100%);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+.bg-gold-green>p{
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 4px;
+}
+.bg-gold-green>p>i{
+    padding-right: 4px;
+}
+
+#nice-area-container{
+    position: relative;
+    margin: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    object-fit: cover;
+}
+#nice-area{
+    position: relative;
+    margin: 0px;
+    overflow: hidden;
+    object-fit: cover;
+    padding-right: 10px;
+    padding-left: 10px;
+    z-index: 1;
+    transition: .3s;
+    width: 100%;
+    height: auto;
+}
+#nice-area-2{
+    position: absolute;
+    margin: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    top: 0px;
+    left: 0px;
+    z-index:0;
+    width: 100%;
+    height: 100%;
+}
+#nice-area:hover{
+    opacity: 0;
+}
+
+#services{
+    padding-top: 0px;
+    font-size: .9em;
+    position: relative;
+    align-items: center;
+}
+#services>p:nth-child(odd){
+    background-color: white;
+}
+#services>p:nth-of-type(1){
+    position: absolute;
+    top: 0px;
+}
+#services>p:nth-of-type(2){
+    position: absolute;
+    top: 34%;
+}
+#services>p:nth-of-type(3){
+    position: absolute;
+    bottom: 0px;
+}
+#services>p{
+    font-size:.9em;
+    position: absolute;
+    bottom: 0px;
+    height: 33%;
+}
+#about-info>.gx-0{
+    position: relative;
+    padding-bottom: 0px;
+    background-color: gold;
+    padding-left: 10px;
+}
+#about-info>.gx-0::before{
+    content: "";
+    background-image: url("~/public/mango-skin.jpg");
+    background-size: 80px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}
+
+
+#about-info{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.title-icon{
+    visibility: hidden;
+}
+
+@media (max-width:900px){
+    .benefit-title{
+        font-size: 0.8em;
+    }
+    .benefit-text{
+        font-size: 0.8em;
+    }
+    #services>p{
+        font-size: 0.8em;
+    }
+}
+@media (max-width:768px){
+    #services>p{
+        font-size: 0.6em;
+    }
+    .icon{
+        display: none;
+    }
+    .title-icon{
+        visibility: visible;
+    }
+    
+}
+@media (max-width:630px){
+    #services>p{
+        font-size: 0.5em;
+    }
+}
+@media screen and (max-width:576px){
+    .benefit-title img{
+        visibility: visible;
+    }
+    .benefit-title{
+        font-size: 1em;
+    }
+    .benefit-text{
+        font-size: 0.7em;
+    }
+    #mission-statement>h2{
+        scale: 0.9;
+    }
+    #services{
+        height: 300px;
+    }
+    #about-info>.gx-0{
+        padding-left: 0px;
+    }
+    #nice-area{
+        padding: 20px;
+    }
+    #nice-area-2{
+        padding: 20px;
+    }
+    #services>p{
+        position: relative;
+        font-size: 0.7em;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        height: 110px;
+        margin: 0px;
+    }
+
+
+    .bg-gold-green:nth-of-type(1){
+        color: black;
+        padding-bottom: 10px;
+        background: linear-gradient(0deg, rgba(55,159,10,1) 26%, rgba(11,35,1,1) 100%);
+    }
+    .bg-gold-green:nth-of-type(3){
+        color: black;
+        padding-bottom: 10px;
+        text-shadow: 4px 4px 5px rgba(13, 62, 7, 1);
+        background: linear-gradient(0deg, rgba(255,215,0,1) 0%, rgba(55,159,10,1) 26%);
+    }
+    .bg-gold-green:nth-of-type(3)>h4{
+        background-image: none;
+        color: white;
+        text-shadow: 4px 4px 5px rgba(13, 62, 7, 1);
+    }
+    .middle {
+        background-image:none;
+        background: rgba(55,159,10,1);
+        text-shadow: 4px 4px 5px rgba(13, 62, 7, 1);
+    }
+    .middle>h4{
+        background-image: none;
+        color: white;
+        text-shadow: 4px 4px 5px rgba(13, 62, 7, 1);
+    }
+    .teardrop{
+        width: 4rem;
+        height: 4rem;
+    }
+    ul{
+        padding-left: 0px !important;
+    }
+}
+@media screen and (min-width: 576px){
+    .benefit-title{
+        font-size: 1.4em;
+    }
+    .bg-gold-green{
+        background-image: none;
+        text-decoration: dashed;
+        background: rgb(255,215,0);
+        background-image: linear-gradient(0deg, rgba(255,215,0,1) 0%, rgba(55,159,10,1) 26%, rgba(11,35,1,1) 100%);
+    }
+    ul{
+        padding-right: 2rem !important;
+    }
+}
+@media (max-width:510px){
+    
+    .teardrop{
+        width: 3rem;
+        height: 3rem;
+    }
+    .list-container>ul{
+        padding-left: 0px;
+    }
+}
+@media (max-width:430px){
+    .benefit-title{
+        font-size: 0.55em;
+        
+    }
+    .benefit-text{
+        font-size: 0.6em;
+    }
+    .teardrop{
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: .5em;
+    }
+    .title-icon{
+        width:50px;
+        height: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .list-item.row{
+        padding: 0px;
+    }
+    .ul{
+        padding: 0px;
+    }
+}
+#about-info{
+    position: relative;
+}
+#about-info::before{
+    content: "";
+    background-image: url("~/public/mango-skin.jpg");
+    background-size: 80px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}

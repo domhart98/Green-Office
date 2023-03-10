@@ -1,0 +1,95 @@
+
+#carousel-img{
+    opacity: 80%;
+    width: 100%;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    object-fit: cover;
+}
+
+.carousel{
+    width: 100%;
+}
+
+#landing-page{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.carousel-caption h3{
+    text-shadow: 10px;
+    font-weight: 600;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+.carousel-caption p{
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+.carousel-caption button{
+    background-color: darkgreen;
+}
+div p{
+    font-family: 'Courier New';
+    font-weight: bolder;
+}
+h1{
+    display: block;
+    text-align: center;
+    margin: auto;
+    align-self: center;
+}
+
+#services-section{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#services-banner{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+.vine-img{
+    margin-right: 0px;
+    margin-left: 0px;
+    height:auto;
+}
+
+.service-img{
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.featurette-text{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.featurette-text:nth-child(even){
+    padding-left: 20px;
+}
+
+.featurette-text h2{
+    display: inline-block;
+    width: auto;
+    border-bottom: 10px solid darkgreen;
+    margin-bottom: 20px;
+}
+
+#landingPage{
+    margin-bottom: 20px;
+}
+
+.background-width:nth-of-type(odd){
+    background-color: aliceblue;
+}
+.background-width{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bold{
+    font-size: 1.2em;
+}

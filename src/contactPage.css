@@ -1,0 +1,55 @@
+#button-container{
+    padding: 0px;
+}
+#contact-page{
+    background-image: url("~/public/grit-texture.png");
+}
+#form-container{
+    margin: auto;
+}
+#contact-form-submit{
+    margin: 20px 0px;
+    border: 2px solid darkgreen; 
+    background: darkgreen;
+    width: 100%;
+    color: white;
+    transition: .1s;
+}
+#contact-form-submit:hover{
+    border: 2px solid rgb(17, 207, 17);
+    background: rgb(17, 207, 17);
+    color: black;
+}
+
+.form-row>.col-md-6{
+}
+.form-control::placeholder{  
+    opacity: 0.7;   
+}
+.form-control:focus::placeholder{
+    visibility: hidden;
+}
+
+.center{
+    text-align:center;
+}
+
+.text-primary{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info{
+    text-decoration: solid underline pink 10px;
+    text-underline-offset: 10px;
+}
+
+.fa-envelope{
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 880px){
+    #contactPage p{
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,40 @@
+.logos-name>.row{
+    vertical-align: middle;
+}
+.logo-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 10px;
+}
+.card-catalogue{
+    border: 10px ridge darksalmon;
+}
+
+#catalogue-page .card-header{
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+    background: aliceblue;
+}
+.carousel-control{
+    background-color: darksalmon;
+}
+
+@media screen and (max-width: 700px){
+    .card-header>h5{
+        font-size: 1em;
+    }
+    .card-header>p{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 520px){
+    .card-header>p{
+        font-size: 0.45em;
+    }
+    .card-header>h5{
+        font-size: 0.9em;
+    }
+}
