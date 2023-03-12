@@ -1,0 +1,189 @@
+.vert-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar.true{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(224,224,224) !important;
+    z-index: 9; 
+    transition: 0.1s ease-in-out;
+    align-items: center;
+    
+}
+.navbar.false{
+    left: 0px;
+    transition: all 2s ease-in-out;
+}
+.navbar{
+    z-index: 2;
+    height: 24vh;
+    position: relative;
+}
+.collapse{
+    display: none;
+    transition: .3s;
+}
+.show{
+    display: block;
+}
+.service-img{
+    width:100%;
+}
+
+
+#logo{
+    width: 100%;
+}
+#logo-container{
+    margin: 0px;
+    display: block;
+}
+#home-logo{
+    width: 35%;
+}
+
+#navbar-container{
+    background-color: rgb(224, 224, 224);;
+    padding: 0px;
+}
+.nav-item{
+    margin-right: 20px;
+}
+
+.nav-item:last-of-type{
+    margin-right: 0px;
+}
+.nav-item:hover{
+    opacity:30%;
+    background-color: rgb(224, 224, 224);
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    padding: 0px;
+}
+.nav-link{
+    margin: auto;
+    padding-right: 0px;
+    width: 100%;
+}
+
+.navbar-collapse{
+    padding-left: 10px;
+    transition: 0.2s;
+    text-align: center;
+    background-color: rgb(224,224,224, 0.9) !important;
+    z-index: 1;
+}
+
+.navbar-toggler-custom{
+    display: none;
+    float: right;
+    margin-right: 20px;
+    border-radius: 10%;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid black;
+    color: black;
+}
+.navbar-toggler-custom:hover{
+    border: 3px solid gray;
+}
+
+
+@media (max-width: 768px){
+    .navbar-toggler-custom{
+        display: block;
+    }
+    .nav-item{
+        margin-right: 0px;
+    }
+    #home-logo{
+        width: 50%;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 24vh;
+        width: 100%;
+        background-color: grey;
+    }
+}
+@media screen and (max-width: 880px){
+    .nav-link{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 576px){
+    #form-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .padding-vert{
+        padding-bottom: 0px;
+    }
+}
+
+ul{
+    padding-right: 0px !important;
+}
+ul hr{
+    margin: 0px;
+}
+
+/* treehouse/hamburger-menu by dustinusey -> github*/
+.hamburger-menu {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+}
+.ham-bar {
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+}
+.bar-top {
+    top: 25%;
+}
+
+.bar-bottom {
+    top: 75%;
+}
+.hamburger-menu.ham-active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+    background-color: darkred;
+}
+.hamburger-menu.ham-active .bar-mid {
+    opacity: 0;
+    background-color: darkred;
+}
+.hamburger-menu.ham-active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+    background-color: darkred;
+}
+
+.close-navbar-toggler{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100%;
+    z-index:1;
+    margin: 0px;
+  }
+  .close-navbar-toggler.collapsed{
+    z-index:-1;
+  }
+
+
