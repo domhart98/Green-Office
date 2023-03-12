@@ -1,15 +1,13 @@
-
 import './App.css';
 import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
-import Route from './route.js';
 import LandingPage from './landingPage.js'
 import AboutPage from './aboutPage.js'
 import ContactPage from './contactPage.js'
 import GalleryPage from './galleryPage.js'
 import CataloguePage from './cataloguePage.js'
-import Navbar from './navbar';
-import Footer from './footer';
+import Layout from './layout.js'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 
@@ -17,13 +15,18 @@ const App = () => {
   
   return (
     <div>
-      <Navbar/>
-      <Route path="/"><LandingPage/></Route>  
-      <Route path="/about"> <AboutPage/></Route>
-      <Route path="/contact"> <ContactPage/></Route>
-      <Route path="/gallery"> <GalleryPage/></Route>
-      <Route path="/catalogue"> <CataloguePage/></Route>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<LandingPage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="catalogue" element={<CataloguePage/>}/>
+            <Route path="gallery" element={<GalleryPage/>}/>
+            {/*<Route path="*" element={<NoPage />} />*/}
+          </Route>  
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
