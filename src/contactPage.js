@@ -24,7 +24,7 @@ const ContactPage = () =>{
             
             <div className="container row gx-0" id="form-container">
                 
-                 <div className="col-md-7" >
+                <div className="col-md-7" >
                     <form className="contact-form" ref={form} onSubmit={sendEmail}>
                         <h2 className="text-primary center">SEND US A MESSAGE</h2>
                         <p>We provide free consultation, plant rental and delivery, plant maintainance, and event rentals. 
@@ -59,7 +59,7 @@ const ContactPage = () =>{
                             
                         </div>
                         <div className="container" id="button-container">
-                            <button type="submit" className="btn btn-primary" id="contact-form-submit"><i className="fa fa-envelope"/>SEND</button>
+                            <button type="submit" className="btn btn-primary" id="contact-form-submit" data-bs-toggle="modal" data-bs-target="#modal-submit-message"><i className="fa fa-envelope"/>SEND</button>
                         </div>
                         
                     </form>
@@ -79,6 +79,20 @@ const ContactPage = () =>{
                     
                 </div> 
             </div>
+            {/* Modal to display "email sent" message on submit*/}
+            <div className="modal fade" id="modal-submit-message" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header modal-submit">
+                            <button type="button" className="close-submit-message" data-bs-dismiss="modal" aria-label="Close">x</button>
+                        </div>
+                    
+                        <div className="modal-body">
+                            <p>Thank you for reaching out to us! We will be in touch with you as soon as we can.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
     )
     

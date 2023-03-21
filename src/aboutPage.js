@@ -32,7 +32,7 @@ const AboutPage = () =>{
                     <p><i className="fa fa-check"></i>83</p>
                 </div>                
             </div>
-            
+            <hr/>
             {/* About the plant rental benefits */}
             <div className="container-fluid" id="about-info">
                 <h3> <img className="img-smaller" alt="" src="./leaf-logo-gold-reverse.jpg" />WHY WE DO WHAT WE DO <img className="img-smaller" alt="" src="./leaf-logo-gold.jpg" /></h3>

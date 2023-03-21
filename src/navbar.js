@@ -65,14 +65,14 @@ const Navbar = () =>{
             <div className="navbar-collapse collapse" id="collapsibleNavbar">
                 <ul className="navbar-nav ms-auto ">
                     <hr/>
-                    <li className="nav-item active" ><i className="fa-solid fa-house" width="20px"/>
-                        <Link className="nav-link" href="/" onClick={toggleHamActive}>
+                    <li className="nav-item" ><i className="fa-solid fa-house" width="20px"/>
+                        <Link className="nav-link" href="/">
                             <i className="fa fa-home fa-beat"/>HOME
                         </Link>
                     </li>
                     <hr/>
-                    <li className="nav-item" >
-                        <Link className="nav-link" href="/about"><i className="fa fa-twitter fa-beat"/>ABOUT</Link>
+                    <li className="nav-item">
+                        <Link className="nav-link" href="/about"><i className="fa fa-user fa-beat"/>ABOUT</Link>
                     </li>
                     <hr/>
                     <li className="nav-item" >

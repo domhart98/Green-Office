@@ -61,12 +61,12 @@ hr{
     transition: 0.3s;
     opacity: 1;
 }
-.modal-body{
+.modal-gallery-body{
     width: 100%;
     height: auto;
     padding: 0px;
 }
-.close{
+.close-modal-image{
     position: absolute;
     padding: 0px;
     top: 10px;
@@ -79,7 +79,7 @@ hr{
     font-size: 2em;
     color: white;
 }
-.close:hover{
+.close-modal-image:hover{
     color: darkred;
     background: transparent;
     border: none;

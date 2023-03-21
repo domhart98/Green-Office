@@ -7,8 +7,8 @@
     margin-top: 0px;
 }
 #list-container{
-    padding: 50px;
-    background: linear-gradient(0deg, rgba(240,248,255,1) 0%, rgb(165, 4, 141) 5%, rgba(55,159,10,1) 68%, rgba(255,215,0,1) 94%);
+    padding: 20px 50px 20px 50px;
+    background: aliceblue;
 }
 .list-item{
     padding-top: 20px;
@@ -36,12 +36,13 @@
     
 }
 #about-info > h3{
+    text-decoration: 3px solid green underline;
+    text-underline-offset: 7px;
     text-align: center;
-    background-color: gold;
-    margin-bottom: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-left: 2px solid rgba(55,159,10,1);
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     color: rgba(55,159,10,1);
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
@@ -53,11 +54,10 @@
 #mission-statement{
     position: absolute;
     top: 50%;
+    padding: 10px 0px;
     transform: translate(0%, -50%);
-    background: rgb(6,119,2);
-    background: linear-gradient(90deg, rgba(6,119,2,0.5) 0%, rgba(5,56,1,0.7) 50%, rgba(6,119,2,0.5) 100%);
+    background-image: url('~/public/leaf-texture.jpg');
     color: white;
-    padding: 10px 0px ;
     text-align: center;
     font-family: monospace;
 }
@@ -126,27 +126,17 @@ ul{
 
 .bg-gold-green{
     position:relative;
+    text-shadow: 2px 2px 4px gray;
+    background-color: aliceblue;
+    border: 1px dotted lightgray;
 }
-.bg-gold-green::before{
-    content: "";
-      background-image: url('~/public/mango-skin.jpg');
-      background-size: 80px;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.1;
-}
+
 .bg-gold-green>h4{
-    background-image: linear-gradient(0deg, rgba(251,254,251,1) 30%, rgba(4,3,0,1) 100%);
-    background-clip: text;
-    color: transparent;
     margin-bottom: 0px;
     padding-top: 10px;
 }
 .bg-gold-green>p{
-    color: white;
+    
     padding-bottom: 10px;
     padding-left: 4px;
 }
@@ -217,13 +207,12 @@ ul{
 }
 #about-info>.gx-0{
     position: relative;
-    padding-bottom: 0px;
-    background-color: gold;
+    padding-bottom: 10px;
+    background-color: aliceblue;
     padding-left: 10px;
 }
 #about-info>.gx-0::before{
     content: "";
-    background-image: url("~/public/mango-skin.jpg");
     background-size: 80px;
     position: absolute;
     top: 0px;
@@ -306,33 +295,6 @@ ul{
         margin: 0px;
     }
 
-
-    .bg-gold-green:nth-of-type(1){
-        color: black;
-        padding-bottom: 10px;
-        background: linear-gradient(0deg, rgba(55,159,10,1) 26%, rgba(11,35,1,1) 100%);
-    }
-    .bg-gold-green:nth-of-type(3){
-        color: black;
-        padding-bottom: 10px;
-        text-shadow: 4px 4px 5px rgba(13, 62, 7, 1);
-        background: linear-gradient(0deg, rgba(255,215,0,1) 0%, rgba(55,159,10,1) 26%);
-    }
-    .bg-gold-green:nth-of-type(3)>h4{
-        background-image: none;
-        color: white;
-        text-shadow: 4px 4px 5px rgba(13, 62, 7, 1);
-    }
-    .middle {
-        background-image:none;
-        background: rgba(55,159,10,1);
-        text-shadow: 4px 4px 5px rgba(13, 62, 7, 1);
-    }
-    .middle>h4{
-        background-image: none;
-        color: white;
-        text-shadow: 4px 4px 5px rgba(13, 62, 7, 1);
-    }
     .teardrop{
         width: 4rem;
         height: 4rem;
@@ -346,10 +308,9 @@ ul{
         font-size: 1.4em;
     }
     .bg-gold-green{
-        background-image: none;
+        
         text-decoration: dashed;
-        background: rgb(255,215,0);
-        background-image: linear-gradient(0deg, rgba(255,215,0,1) 0%, rgba(55,159,10,1) 26%, rgba(11,35,1,1) 100%);
+        
     }
     ul{
         padding-right: 2rem !important;
@@ -366,6 +327,9 @@ ul{
     }
 }
 @media (max-width:430px){
+    #about-info > h3{
+        font-size: .9em;;
+    }
     .benefit-title{
         font-size: 0.55em;
         
@@ -395,15 +359,6 @@ ul{
 }
 #about-info{
     position: relative;
+    background-color: aliceblue;
 }
-#about-info::before{
-    content: "";
-    background-image: url("~/public/mango-skin.jpg");
-    background-size: 80px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.15;
-}
+

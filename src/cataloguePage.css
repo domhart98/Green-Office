@@ -17,24 +17,29 @@
     padding-top: 10px;
     text-align: center;
     background: aliceblue;
+    font-family: Helvetica;
 }
 .carousel-control{
     background-color: darksalmon;
 }
+.card-header>h4{
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Georgia;
+}
+.card-header>p{
+    font-size: 1em;
+    font-family: helvetica;
+}
 
-@media screen and (max-width: 700px){
-    .card-header>h5{
+@media screen and (max-width: 520px){
+    .card-header>h4{
         font-size: 1em;
     }
     .card-header>p{
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 520px){
-    .card-header>p{
-        font-size: 0.45em;
+        font-size: 0.6em;
     }
     .card-header>h5{
-        font-size: 0.9em;
+        font-size: 0.95em
     }
 }

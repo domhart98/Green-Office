@@ -9,11 +9,11 @@ const GalleryPage = () =>{
                 <div className="modal fade" id="modalExample" tabIndex="-1" role="dialog" aria-hidden="true">
                     <div className="modal-dialog" role="document">
                         <div className="modal-content">
-                            <div className="modal-body">
+                            <div className="modal-body modal-gallery-body">
                                 <div id="carouselExample" className="carousel slide" data-bs-interval=
                                 'false'>
                                     <div className="carousel-inner">
-                                        <button type="button" className="close" data-bs-dismiss="modal">x</button>
+                                        <button type="button" className="close-modal-image" data-bs-dismiss="modal">x</button>
                                         <div className="carousel-item active">
                                             <img className="d-block w-100 modal-image modal-image" src='./royal-palm.jpg' alt="First "/>
                                         </div>

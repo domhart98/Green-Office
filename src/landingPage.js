@@ -20,7 +20,7 @@ const LandingPage = () =>{
                             <div className="carousel-caption d-md-block">
                                 <h3>WE ARE GREEN OFFICE</h3>
                                 <p>- Call us for a free quote OR contact us-<br/> <i className="fa fa-phone"/>::<span className="bold">+1 (246) 832-1255</span></p>
-                                <Link className="nav-link" href="/contact"><button className="btn btn-success btn-lg">contact us</button></Link>
+                                <Link className="nav-link" href="/contact"><button className="btn btn-lg">contact us</button></Link>
                             </div>
                         </div>
                         <div className="carousel-item">
@@ -28,7 +28,7 @@ const LandingPage = () =>{
                             <div className="carousel-caption d-md-block">
                                 <h3>TAKE A LOOK AT OUR WORK</h3>
                                 <p>- Check out some of our plants and installations -</p>
-                                <Link className="nav-link" href="/gallery"><button className="btn btn-success btn-lg">gallery</button></Link>
+                                <Link className="nav-link" href="/gallery"><button className="btn btn-lg">gallery</button></Link>
                             </div>
                         </div>
                         <div className="carousel-item">
@@ -36,7 +36,7 @@ const LandingPage = () =>{
                             <div className="carousel-caption d-md-block">
                                 <h3>LEARN A BIT ABOUT US</h3>
                                 <p>- We believe in the health/productivity benefits of a greener space, but do not just take our word for it! -</p>
-                                <Link className="nav-link" href="/about"><button className="btn btn-success btn-lg">about us</button></Link>
+                                <Link className="nav-link" href="/about"><button className="btn btn-lg">about us</button></Link>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const LandingPage = () =>{
                         <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img" height="50px" width="100%"/>
                     </div>
                     <div className="col-4 my-auto">
-                        <h1 className="">OUR SERVICES</h1>
+                        <h1 className="services-header">OUR SERVICES</h1>
                     </div>
                     <div className="col-4">
                         <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img" height="50px" width="100%"/>
@@ -64,14 +64,18 @@ const LandingPage = () =>{
                 {/* Featurettes which describe and link to our services */}
                 <div className="container-fluid" id="services-section">
                     <div className="container-fluid background-width">
-                        <div className="container row-container">
+                        <div className="container-fluid row-container">
                             <div className="row featurette">
                                 <div className="col-sm-7 featurette-text" >
                                     <h2>Plant Hire and Events</h2>
-                                    <p>&#62; We provide long and short term plant rentals across Barbados, and bring the goods to your doorstep.
-                                    Whether it be
-                                    an Office Building, Restaurant, Library or Wedding, our selection of plants will breathe life into your space
+                                    <p> We provide long and short term plant rentals across Barbados, and bring the goods to your doorstep.
+                                        Our plants are cultivated with the utmost care, and people will take notice. We cater to:
                                     </p>
+                                    <div className="services-bullet-points">
+                                        <p>&#x2022; Places of business, like office buildings and show rooms  </p>
+                                        <p>&#x2022; Restaurants, Gyms, and other recreational facilities </p>
+                                        <p>&#x2022; Weddings and other events </p>
+                                    </div>
                                 </div>
                                 <div className="col-sm-5">
                                     <img className="service-img" src={'./wedding-plants.jpg'} alt="img here"  width="200px" height="200px"/>                    
@@ -83,15 +87,21 @@ const LandingPage = () =>{
                     <hr className="featurette-divider"/>
 
                     <div className="container-fluid background-width">
-                        <div className="container row-container">
+                        <div className="container-fluid row-container">
                             <div className="row featurette">
                                 <div className="col-sm-5 order-sm-1 ">
-                                    <img className="service-img" src={'./consulting-inside.jpg'} alt="img here" width="200px" height="200px"/>                    
+                                    <img className="service-img" src={'./landscaper.jpg'} alt="img here" width="200px" height="200px"/>                    
                                 </div>
                                 <div className="col-sm-7 order-sm-2 order-first featurette-text">
                                     <h2>Consultation</h2>
-                                    <p>&#62; Our team will come to you, and provide our design expertise and horticultural experience,
-                                    so that you can create and maintain the right look for the right price in your green space.</p>
+                                    <p>Our team will come to you, and provide our design expertise and horticultural experience,
+                                    so that you can create and maintain the right look for the right price in your green space. Here are a few
+                                    of our considerations: </p>
+                                    <div className="services-bullet-points">
+                                        <p>&#x2022; Colors of plants and pots  </p>
+                                        <p>&#x2022; Available floor space, size and placement </p>
+                                        <p>&#x2022; Cost effectiveness </p>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -101,13 +111,18 @@ const LandingPage = () =>{
                     <hr className="featurette-divider"/>
 
                     <div className="container-fluid background-width">
-                        <div className="container row-container">
+                        <div className="container-fluid row-container">
                             <div className="row featurette">
                                 <div className="col-sm-7 featurette-text">
                                     <h2>Delivery & Maintainance</h2>
-                                    <p>&#62; Plants can be fussy. That's why our team drives routes all over the island: so that we can care, trim, replace and repropogate our plants as quickly as possible.
-                                        Keeping your office looking vibrant, around the clock!
+                                    <p>Plants can be fussy. That's why our team drives routes all over the island: so that we can take care of and maintain our beauties.
+                                       This way, your office stays looking vibrant, around the clock! Services include:
                                     </p>
+                                    <div className="services-bullet-points">
+                                        <p>&#x2022; Watering, trimming, and general maintainance  </p>
+                                        <p>&#x2022; Repotting, and plant replacements </p>
+                                        <p>&#x2022; Island-wide delivery </p>
+                                    </div>
                                 </div>
                                 <div className="col-sm-5 ">
                                     <img className="service-img" src={'./plant-van.jpg'} alt="img here" width="200px" height="200px"/>                    

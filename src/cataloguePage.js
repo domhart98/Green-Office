@@ -4,9 +4,9 @@ import './cataloguePage.css'
 const CataloguePage = () =>{
     return(
         <div className="" id="catalogue-page">
-            <div class="card-catalogue">
-                <div class="card-header">
-                    <h5 class="card-title"><span className="bold">Ansa McAl</span> - Our Installations</h5>
+            <div className="card-catalogue">
+                <div className="card-header">
+                    <h4 className="card-title"><span className="bold">Ansa McAl</span> - Our Installations</h4>
                     <p>- Have a look through the slideshow below to see what we do! -</p>
                 </div>
                 <div id="carouselCatalogue" className="carousel slide" data-bs-ride="carousel">
@@ -49,8 +49,8 @@ const CataloguePage = () =>{
                 </div>
             </div>
             <div>
-                <div class="card-header">
-                    <h5 class="card-title"><img src="./below-icon.png" width="30" height="30" alt=""/> SOME MORE OF OUR CLIENTS <img src="./below-icon.png" width="30" height="30" alt=""/></h5>   
+                <div className="card-header">
+                    <h5 className="card-title"><img src="./below-icon.png" width="30" height="30" alt=""/> SOME MORE OF OUR CLIENTS <img src="./below-icon.png" width="30" height="30" alt=""/></h5>   
                 </div>
             </div>
             <div className="logos-display">
