@@ -58,6 +58,8 @@ div p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .vine-img{
+    width: 100%;
+    height: auto;
     margin-right: 0px;
     margin-left: 0px;
 }

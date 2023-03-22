@@ -51,13 +51,13 @@ const LandingPage = () =>{
                 </div>
                 <div className="container-fluid row gx-0" id="services-banner">
                     <div className="col-4">
-                        <img src={'./vine-border1.jpg'} alt="vine border" className="./vine-img-resized.jpg" width="100%" height="auto"/>
+                        <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img" width="420px" height="70px"/>
                     </div>
                     <div className="col-4 my-auto">
                         <h1 className="services-header">OUR SERVICES</h1>
                     </div>
                     <div className="col-4">
-                        <img src={'./vine-border1.jpg'} alt="vine border" className="./vine-img-resized.jpg" width="100%" height="auto"/>
+                        <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img" width="420px" height="70px"/>
                     </div>
                 </div>
                 
