@@ -10,9 +10,9 @@ const LandingPage = () =>{
                 {/* Greeting Carousel */}
                 <div id="carouselHome" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
-                        <button data-bs-target="#carouselHome" data-bs-slide-to="0" className="active"></button>
-                        <button data-bs-target="#carouselHome" data-bs-slide-to="1" className=""></button>
-                        <button data-bs-target="#carouselHome" data-bs-slide-to="2" className=""></button>
+                        <button data-bs-target="#carouselHome" data-bs-slide-to="0" className="active" aria-label="carousel-indicator"></button>
+                        <button data-bs-target="#carouselHome" data-bs-slide-to="1" className="" aria-label="carousel-indicator"></button>
+                        <button data-bs-target="#carouselHome" data-bs-slide-to="2" className="" aria-label="carousel-indicator"></button>
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -51,13 +51,13 @@ const LandingPage = () =>{
                 </div>
                 <div className="container-fluid row gx-0" id="services-banner">
                     <div className="col-4">
-                        <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img-resized" height="50px" width="100%"/>
+                        <img src={'./vine-border1.jpg'} alt="vine border" className="./vine-img-resized.jpg" width="100%" height="auto"/>
                     </div>
                     <div className="col-4 my-auto">
                         <h1 className="services-header">OUR SERVICES</h1>
                     </div>
                     <div className="col-4">
-                        <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img-resized" height="50px" width="100%"/>
+                        <img src={'./vine-border1.jpg'} alt="vine border" className="./vine-img-resized.jpg" width="100%" height="auto"/>
                     </div>
                 </div>
                 
