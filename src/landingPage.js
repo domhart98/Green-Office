@@ -51,13 +51,13 @@ const LandingPage = () =>{
                 </div>
                 <div className="container-fluid row gx-0" id="services-banner">
                     <div className="col-4">
-                        <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img" height="50px" width="100%"/>
+                        <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img-resized" height="50px" width="100%"/>
                     </div>
                     <div className="col-4 my-auto">
                         <h1 className="services-header">OUR SERVICES</h1>
                     </div>
                     <div className="col-4">
-                        <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img" height="50px" width="100%"/>
+                        <img src={'./vine-border1.jpg'} alt="vine border" className="vine-img-resized" height="50px" width="100%"/>
                     </div>
                 </div>
                 
@@ -78,7 +78,7 @@ const LandingPage = () =>{
                                     </div>
                                 </div>
                                 <div className="col-sm-5">
-                                    <img className="service-img" src={'./wedding-plants.jpg'} alt="img here"  width="200px" height="200px"/>                    
+                                    <img className="service-img" src={'./wedding-plants-resized.jpg'} alt="img here"  width="200px" height="200px"/>                    
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@ const LandingPage = () =>{
                         <div className="container-fluid row-container">
                             <div className="row featurette">
                                 <div className="col-sm-5 order-sm-1 ">
-                                    <img className="service-img" src={'./landscaper.jpg'} alt="img here" width="200px" height="200px"/>                    
+                                    <img className="service-img" src={'./landscaper-resized.jpg'} alt="img here" width="200px" height="200px"/>                    
                                 </div>
                                 <div className="col-sm-7 order-sm-2 order-first featurette-text">
                                     <h2>Consultation</h2>
