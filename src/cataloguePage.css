@@ -1,45 +1,63 @@
-.logos-name>.row{
-    vertical-align: middle;
-}
-.logo-img{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    object-fit: cover;
-    padding: 10px;
-}
-.card-catalogue{
-    border: 10px ridge darksalmon;
-}
-
-#catalogue-page .card-header{
-    height: 80px;
-    padding-top: 10px;
+.card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8vw 0px 6vw 0px;
     text-align: center;
     background: aliceblue;
-    font-family: Helvetica;
-}
-.carousel-control{
-    background-color: darksalmon;
+    font-family: sans-serif;
 }
 .card-header>h4{
-    font-size: 1.6em;
+    font-size: 3.2vw;
     font-weight: bold;
-    font-family: Georgia;
 }
 .card-header>p{
-    font-size: 1em;
-    font-family: helvetica;
+    font-size: 2vw;
+}
+.card-header>h5{
+    font-size: 3vw
+}
+.card-header>h5>img{
+    width: 4vw;
+    height: auto;
+}
+.card-header>h5:hover{
+    animation-name: bounce;
+    animation-duration: infinite;
+}
+.logo-img{
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
+    padding: 10px;
 }
 
-@media screen and (max-width: 520px){
-    .card-header>h4{
-        font-size: 1em;
-    }
-    .card-header>p{
-        font-size: 0.6em;
-    }
-    .card-header>h5{
-        font-size: 0.95em
-    }
+
+.fancy-border{
+    --s: 10px; /* control the size */
+    padding: var(--s);
+    border: calc(2*var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
+    background-color: aliceblue;
+}
+
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.row-logo{
+    display: flex;
+    justify-content: center;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    25% {transform: translateY(0.3vw);}
+    50%  { transform: translateY(-0.3vw); }
+    75% {transform: translateY(0.3vw);}
+    100% { transform: translateY(0); }
 }

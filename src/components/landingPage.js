@@ -8,9 +8,9 @@ const LandingPage = () =>{
         return(
             <div className="container-fluid" id="landing-page">
                 {/* Greeting Carousel */}
-                <div id="carouselHome" className="carousel slide" >
+                <div id="carouselHome" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
-                        <button data-bs-target="#carouselHome" data-bs-slide-to="0" className="active" aria-label="carousel-indicator" data-bs-ride="carousel"></button>
+                        <button data-bs-target="#carouselHome" data-bs-slide-to="0" className="active" aria-label="carousel-indicator"></button>
                         <button data-bs-target="#carouselHome" data-bs-slide-to="1" className="" aria-label="carousel-indicator"></button>
                         <button data-bs-target="#carouselHome" data-bs-slide-to="2" className="" aria-label="carousel-indicator"></button>
                     </div>
@@ -20,7 +20,7 @@ const LandingPage = () =>{
                             <div className="carousel-caption d-md-block">
                                 <h3>WE ARE GREEN OFFICE</h3>
                                 <p>- Call us for a free quote OR contact us-<br/> <i className="fa fa-phone"/>::<span className="bold">+1 (246) 832-1255</span></p>
-                                <Link href="/contact"><button className="btn btn-lg">CONTACT US</button></Link>
+                                <Link className="nav-link" href="/contact"><button className="btn btn-lg">contact us</button></Link>
                             </div>
                         </div>
                         <div className="carousel-item">
@@ -28,15 +28,15 @@ const LandingPage = () =>{
                             <div className="carousel-caption d-md-block">
                                 <h3>TAKE A LOOK AT OUR WORK</h3>
                                 <p>- Check out some of our plants and installations -</p>
-                                <Link href="/gallery"><button className="btn btn-lg">GALLERY</button></Link>
+                                <Link className="nav-link" href="/gallery"><button className="btn btn-lg">gallery</button></Link>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img id="carousel-img" className="d-block w-100" src={require('./images/background.webp')} alt="Third slide" width="200px" height="200px"/>
+                            <img id="carousel-img" className="d-block w-100" src={'./baby-plants.jpg'} alt="Third slide" width="200px" height="200px"/>
                             <div className="carousel-caption d-md-block">
                                 <h3>LEARN A BIT ABOUT US</h3>
                                 <p>- We believe in the health/productivity benefits of a greener space, but do not just take our word for it! -</p>
-                                <Link href="/about"><button className="btn btn-lg">ABOUT US</button></Link>
+                                <Link className="nav-link" href="/about"><button className="btn btn-lg">about us</button></Link>
                             </div>
                         </div>
                     </div>
@@ -51,13 +51,13 @@ const LandingPage = () =>{
                 </div>
                 <div className="container-fluid row gx-0" id="services-banner">
                     <div className="col-4">
-                        <img src={require('./images/vine-border1-reversed.png')} alt="vine border" className="vine-img" width="420px" height="70px"/>
+                        <img src={'./vine-border1-resized.jpg'} alt="vine border" className="vine-img" width="420px" height="70px"/>
                     </div>
                     <div className="col-4 my-auto">
                         <h1 className="services-header">OUR SERVICES</h1>
                     </div>
                     <div className="col-4">
-                        <img src={require('./images/vine-border1.png')} alt="vine border" className="vine-img" width="420px" height="70px"/>
+                        <img src={'./vine-border1-resized.jpg'} alt="vine border" className="vine-img" width="420px" height="70px"/>
                     </div>
                 </div>
                 
@@ -77,7 +77,7 @@ const LandingPage = () =>{
                                         <p>&#x2022; Weddings and other events </p>
                                     </div>
                                 </div>
-                                <div className="col-sm-5 featurette-image">
+                                <div className="col-sm-5">
                                     <img className="service-img" src={'./wedding-plants-resized.jpg'} alt="img here"  width="200px" height="200px"/>                    
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ const LandingPage = () =>{
                     <div className="container-fluid background-width">
                         <div className="container-fluid row-container">
                             <div className="row featurette">
-                                <div className="col-sm-5 order-sm-1 featurette-image">
+                                <div className="col-sm-5 order-sm-1 ">
                                     <img className="service-img" src={'./landscaper-resized.jpg'} alt="img here" width="200px" height="200px"/>                    
                                 </div>
                                 <div className="col-sm-7 order-sm-2 order-first featurette-text">
@@ -124,7 +124,7 @@ const LandingPage = () =>{
                                         <p>&#x2022; Island-wide delivery </p>
                                     </div>
                                 </div>
-                                <div className="col-sm-5 featurette-image ">
+                                <div className="col-sm-5 ">
                                     <img className="service-img" src={'./plant-van.jpg'} alt="img here" width="200px" height="200px"/>                    
                                 </div>
                             </div>

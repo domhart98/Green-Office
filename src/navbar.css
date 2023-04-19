@@ -1,141 +1,143 @@
-.vert-padding{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.navbar.true{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: rgb(224,224,224) !important;
-    z-index: 9; 
-    transition: 0.1s ease-in-out;
-    align-items: center;
-    
-}
-.navbar.false{
-    left: 0px;
-    transition: all 2s ease-in-out;
-}
-.navbar{
-    z-index: 2;
-    height: 24vh;
-    position: relative;
-}
-.collapse{
-    display: none;
-    transition: .3s;
-}
-.show{
-    display: block;
-}
-.service-img{
-    width:100%;
-}
-
-
-#logo{
-    width: 100%;
-}
-#logo-container{
-    margin: 0px;
-    display: block;
-}
-#home-logo{
-    width: 35%;
-}
-
 #navbar-container{
-    background-color: rgb(224, 224, 224);;
-    padding: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
-.nav-item{
-    margin-right: 20px;
+#navbar{
+    position: relative;
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F8F3EB;
+    z-index: 2;
 }
-
-.nav-item:last-of-type{
-    margin-right: 0px;
+#nav-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
 }
-.nav-item:hover{
-    opacity:30%;
-    background-color: rgb(224, 224, 224);
-    color: white;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    padding: 0px;
+#nav-brand>a{
+    width: 90%;
+    margin: 0px;
+    object-fit: cover;
+}
+#nav-brand>a>img{
+    width: 100%;
+    height: auto;
+}
+#nav-menu{
+    position: absolute;
+    top: 3.4vw;
+    right: 2vw;
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    z-index: 3;
 }
 .nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.6vw;
+    text-decoration: none;
+    opacity: 0.65;
+}
+.nav-link:hover{
+    opacity: 0.3;
+    scale: 0.9;
+    transition: 0.4;
+    cursor: pointer;
+}
+.nav-link>img{
+    width: 1.8vw;
+    padding: 0.2vw;
+    aspect-ratio: 1/1;
+
+}
+.nav-link>p{
     margin: auto;
-    padding-right: 0px;
-    width: 100%;
+    font-size: 1.4vw;
 }
-
-.navbar-collapse{
-    padding-left: 10px;
-    transition: 0.2s;
-    text-align: center;
-    background-color: rgb(224,224,224, 0.9) !important;
-    z-index: 1;
+#toggler-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 5vw;
+    height: 12vw;
 }
-
 .navbar-toggler-custom{
     display: none;
-    float: right;
-    margin-right: 20px;
-    border-radius: 10%;
-    background-color: rgb(224, 224, 224);
+    margin: auto 0px auto 40vw;
+    aspect-ratio: 1/1;
     border: 1px solid black;
-    color: black;
+    border-radius: 5px;
+    z-index: 3;
+    background-color:  #f8f3eb;
 }
 .navbar-toggler-custom:hover{
-    border: 3px solid gray;
+    scale: 0.95;
+    border: 2px solid black;
 }
 
 
-@media (max-width: 768px){
+
+@media only screen and (max-width: 768px){
+    #navbar-container>.hidden{
+        max-height: 0;
+        transition: max-height 0.4s ease-out;
+    }
+    #navbar-container>.show{
+        max-height: 1500px;
+        transition: max-height 0.4s ease-in;
+    }
+    #navbar-container{
+        justify-content: left;
+    }
+    #navbar{
+        height: 115px;
+    }
+    #nav-menu{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        top: 115px;
+        right: 0px;
+        flex-direction: column;
+        background-color: rgb(207, 248, 243);
+        border-bottom: 0.1vw solid lightgray;
+        z-index: 1;
+    }
+    #nav-brand{
+        width: 70%;
+    }
+    .nav-link{
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+        border-top: 0.1vw solid lightgray;
+    }
+    .nav-link>img{
+        width: 2vw;
+        padding: 0.2vw;
+        aspect-ratio: 1/1;
+    }
+    .nav-link>p{
+        margin: 2vw 0px;
+        font-size: 1.6vw;
+    }
     .navbar-toggler-custom{
         display: block;
-    }
-    .nav-item{
-        margin-right: 0px;
-    }
-    #home-logo{
-        width: 50%;
-        margin-left: 0px;
-        margin-bottom: 10px;
-    }
-    .navbar-collapse{
         position: absolute;
-        top: 24vh;
-        width: 100%;
-        background-color: grey;
+        top: -82px;
+        right: 0vw;
     }
-}
-@media screen and (max-width: 880px){
-    .nav-link{
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 576px){
-    #form-container{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .padding-vert{
-        padding-bottom: 0px;
-    }
-}
-
-ul{
-    padding-right: 0px !important;
-}
-ul hr{
-    margin: 0px;
+    
 }
 
 /* treehouse/hamburger-menu by dustinusey -> github*/
 .hamburger-menu {
-    height: 20px;
-    width: 20px;
     position: relative;
     cursor: pointer;
     padding: 1rem;
@@ -173,17 +175,5 @@ ul hr{
     background-color: darkred;
 }
 
-.close-navbar-toggler{
-    position:absolute;
-    top:0;
-    left:0;
-    height:100vh;
-    width:100%;
-    z-index:1;
-    margin: 0px;
-  }
-  .close-navbar-toggler.collapsed{
-    z-index:-1;
-  }
 
 

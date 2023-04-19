@@ -1,61 +1,74 @@
-.services-bullet-points{
-    font-size: .8em;
-    font-weight: lighter;
-}
-#carousel-img{
-    opacity: 80%;
-    width: 100%;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    object-fit: cover;
-}
-
-.carousel{
-    width: 100%;
-}
-
 #landing-page{
     padding-left: 0px;
     padding-right: 0px;
 }
 
+/* Welcome Carousel */
+.carousel{
+    position: relative;
+    width: 100%;
+}
+#carousel-img{
+    opacity: 80%;
+    width: 100%;
+    height: 40vw;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    object-fit: cover;
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    padding: 1vw;
+}
 .carousel-caption h3{
+    margin-bottom: 0.5vw;
     text-shadow: 10px;
+    font-size: 2.5vw;
     font-weight: 600;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 .carousel-caption p{
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 .carousel-caption button{
+    width: 15vw;
+    height: 5vw;
+    padding:0px;
+    border-radius: 1vw;
+    font-size: 1.6vw;
     background-color: darkgreen;
+    box-shadow: 0px 0px 4px gray;
 }
-div p{
-    font-family: Helvetica;
-     /*arial, arial black, verdana, times new, georgia, palatino, baskerville, optima, didot, american typewriter*/
-    font-weight: lighter;
+.btn.btn-lg{
+    margin: 0.5vw;
+    color: white;
 }
-.services-header{
-    display: block;
-    text-align: center;
-    margin: auto;
-    align-self: center;
-    font-size: 1.3em;
+.btn.btn-lg:hover{
+    background-color: darkgreen;
+    scale: 0.95;
+    transition: 0.3s;
+}
+.carousel-indicators{
+    margin-bottom: 1vw;
+    z-index: 1;
+}
+.carousel-indicators>button{
+    width: 3vw !important;
+    height: 0.3vw !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    background-clip:unset !important; 
 }
 
-#services-section{
-    padding-left: 0px;
-    padding-right: 0px;
-}
+/* Services Banner */
 #services-banner{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 10vw 0px 8vw 0vw;
     box-sizing: border-box;
     background-color: aliceblue;
-    font-size: 1.8em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .vine-img{
     width: 100%;
@@ -64,97 +77,86 @@ div p{
     margin-left: 0px;
 }
 
-.service-img{
-    width: 100%;
-    height: auto;
-    display: block;
-    
+/* Services */
+#services-section{
+    padding-left: 0px;
+    padding-right: 0px;
 }
-.btn.btn-lg{
-    color: white;
-}
-.btn.btn-lg:hover{
-    background-color: darkgreen;
-    scale: 0.95;
-    transition: 0.3s;
-}
-
-.featurette-text{
-    display: block;
-    font-size: 1.4em;
-}
-.featurette-text:nth-child(even){
-    padding-left: 20px;
-}
-
-.featurette-text h2{
-    display: inline-block;
-    width: auto;
-    border-bottom: 10px solid darkgreen;
-
-    margin-bottom: 30px;
-    font-weight: bolder;
-    font-size: 1.6em;
-    font-family: Georgia;
-    /*arial, arial black, verdana, times new, georgia, palatino, baskerville, optima, didot, american typewriter*/
-}
-
-
-#landingPage{
-    margin-bottom: 20px;
-}
-
 .background-width:nth-of-type(odd){
     background-color: aliceblue;
 }
 .background-width{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 5vw 0vw 5vw 0vw;
+}
+.services-header{
+    display: block;
+    text-align: center;
+    margin: auto;
+    align-self: center;
+    font-size: 4vw;
+    font-family: sans-serif;
+}
+.featurette-text{
+    display: block;
+    padding: 0vw 5vw 0vw 5vw; 
+}
+.featurette-text:nth-child(even){
+    display: block;
+    padding: 0vw 5vw 0vw 5vw; 
+}
+.featurette-text h2{
+    display: inline-block;
+    width: auto;
+    border-bottom: 1vw solid darkgreen;
+    margin-bottom: 3vw;
+    font-weight: 400;
+    font-size: 4vw;
+    font-family: sans-serif;
+    /*arial, arial black, verdana, times new, georgia, palatino, baskerville, optima, didot, american typewriter*/
+}
+.featurette-text>p{
+    font-size: 2vw;
+}
+.featurette-image{
+    padding:  0px 5vw 0vw 0vw;
+}
+.featurette-image:nth-child(odd){
+    padding: 0px 0vw 0vw 5vw;
+}
+.services-bullet-points{
+    font-weight: lighter;
+    font-size: 2vw;
+}
+.service-img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-@media screen and (max-width: 870px){
-    .featurette-text h2{
-        font-size: 1.4em;
-    }
-    .featurette-text{
-        display: block;
-        font-size: 1.2em;
-    }
-    .services-header{
-        font-size: 1em;
-    }
-}
-@media screen and (max-width: 670px){
-    .featurette-text h2{
-        font-size: 1.2em;
-    }
-    .featurette-text{
-        display: block;
-        font-size: 1em;
-    }
-    .services-header{
-        font-size: 0.8em;
-    }
-}
 @media screen and (max-width: 576px){
     .featurette-text h2{
-        position: relative;
-        font-size: 1.25em;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-left: 50%;
+        transform: translate(-50%, 0px);
+        font-size: 3.5vw;
     }
-    .services-header{
-        display: block;
-        text-align: center;
+    .featurette-text>p{
+        font-size: 3vw;
+    }
+    .featurette-image{
+        padding: 5vw;
+    }
+    .featurette-image:nth-child(odd){
+        padding: 0px 5vw 0vw 5vw;
+    }
+    .services-bullet-points>p{
+        font-size: 3vw;
+    }
+    .service-img{
         margin: auto;
-        align-self: center;
-        font-size: 0.6em;
     }
-    .carousel-caption h3{
-        font-size: 1.2em;
-    }
-    .carousel-caption p{
-        font-size: 0.8em;
+    .background-width{
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
 }
 

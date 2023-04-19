@@ -1,12 +1,18 @@
-#button-container{
-    padding: 0px;
-}
+
 #contact-page{
     position: relative;
+    display: flex;
     background-image: url("~/public/grit-texture.png");
 }
+
+/* FORM */
 #form-container{
-    margin: auto;
+    position: relative;
+    width: 60%;
+    margin: 2vw 5vw 5vw 5vw;
+}
+#button-container{
+    padding: 0px;
 }
 #contact-form-submit{
     margin: 20px 0px;
@@ -17,12 +23,9 @@
     transition: .1s;
 }
 #contact-form-submit:hover{
-    border: 2px solid rgb(17, 207, 17);
-    background: rgb(17, 207, 17);
+    opacity: 0.9;
+    transition: 0.2s;
     color: black;
-}
-
-.form-row>.col-md-6{
 }
 .form-control::placeholder{  
     opacity: 0.7;   
@@ -31,46 +34,130 @@
     visibility: hidden;
 }
 
+/* Contact Info*/
+#contact-info-container{
+    width: 40%;
+    margin: 2vw 5vw 5vw 5vw;
+}
+
+/* Modal */
+#modal-custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 12vw 10vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    cursor:pointer;
+}
+#modal-custom.hidden{
+    display: none;
+}
+#modal-header{
+    width: 100%;
+    border: 0.1vw solid black;
+    background-color: darkgreen;
+    border-radius: 1vw 1vw 0vw 0vw;
+}
+#modal-header>button{
+    border: none;
+    margin: 0.1vw 0.4vw;
+    font-size: 2vw;
+    background-color: darkgreen;
+    color: white;
+}
+#modal-header>button:hover{
+    color: darkred;
+}
+#modal-body{
+    width: 100%;
+    border: 0.1vw solid black;
+    background-color: gainsboro;
+    font-size: 1.5vw;
+    padding: 1.5vw;
+    border-radius: 0vw 0vw 1vw 1vw;
+}
+
+/* Misc */
 .center{
     text-align:center;
 }
-
 .text-primary{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 4vw;
 }
-
-.contact-info{
+.pink-underline{
     text-decoration: solid underline pink 10px;
     text-underline-offset: 10px;
 }
-
 .fa-envelope{
     margin-right: 4px;
 }
 
 
-.modal-header.modal-submit{
-    padding: 0px;
-    background-color: lightgreen;
-}
-.close-submit-message{
-    background-color: lightgreen;
-    padding: 0px;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-    color: black;
-    border: none;
-    margin: 10px;
-}
-.close-submit-message:hover{
-    font-weight: bolder;
-    color: red;
-}
-
-@media screen and (max-width: 880px){
-    #contactPage p{
-        font-size: 0.9em;
+@media only screen and (max-width: 1000px){
+    #contact-page{
+        flex-direction: column;
+    }
+    #form-container{
+        width: 100%;
+        margin: 0px;
+        padding: 5vw;
+    }
+    .contact-form>h2{
+        font-size: 4.5vw;
+    }
+    .contact-form>p{
+        font-size: 2.5vw;
+        margin: 4vw 0px;
+    }
+    #modal-custom{
+        padding: 20vw 25vw;
+    }
+    #modal-header>button{
+        font-size: 3vw;
+    }
+    #modal-body{
+        padding: 2vw 2vw;
+        font-size: 2.5vw;
+    }
+    #contact-info-container{
+        width: 100%;
+        margin: 0px 0px 5vw 0px;
+        padding: 0px 5vw   5vw 5vw;
+    }
+    #contact-info{
+        display: flex;
+        width: 100%;
+    }
+    #contact-info-container>h2{
+        font-size: 4vw;
+        margin: 5vw 0px 5vw 0px;
+    }
+    #contact-info-A{
+        width: 50%;
+        padding-left: 10vw;
+    }
+    #contact-info-B{
+        width: 50%;
+        padding-left: 0vw;
+    }
+    #contact-info-container p{
+        font-size: 2.5vw;
+    }
+    .pink-underline{
+        text-decoration: solid underline pink 1.6vw;
+        text-underline-offset: 1.6vw;
+    }
+    .form-control{
+        font-size: 2.5vw;
+    }
+    #contact-form-submit{
+        font-size: 2.5vw;
     }
 }
