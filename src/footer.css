@@ -1,12 +1,56 @@
 .footer{
-    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
     background-color: #F8F3EB;
-    text-align: center;
-    padding-top: 50px;
+    border-top: 0.1vw solid lightsteelblue;
 }
-.footer p{
-    font-size: .8em;
+
+#return-button-container{
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    top: -2.5vw;
+}
+#return-button{
+    width: 5vw;
+    height: 5vw;
+    object-fit: fill;
+    rotate: 180deg;
+    background-color: #F8F3EB;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    
+}
+#return-button:hover{
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+#return-button>img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+#social-icons-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 2vw;
+    margin: 0.2vw 0vw;
+}
+.social-icon{
+    text-align: center;
+    width: 6vw;
+}
+.footer>p{
+    font-size: 1.6vw;
     font-weight: 200;
+    margin: 0px;
 }
 .footer>ul{
     margin: auto;
@@ -23,4 +67,10 @@
 
 .footer>ul>li>a{
     margin: 10px;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(1vw); }
+    100% { transform: translateY(0); }
 }

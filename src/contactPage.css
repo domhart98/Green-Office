@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     background-image: url("~/public/grit-texture.png");
+    padding: 5vw;
 }
 
 /* FORM */

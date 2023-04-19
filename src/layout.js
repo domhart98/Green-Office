@@ -20,7 +20,7 @@ const Layout = () =>{
       <div className="body-wrapper">
         <a className={`close-navbar-toggler ${collapsed ? "hidden" : "show" }`} href="#navbar-container" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleCollapsibleNavbar}>
           {/* Single whitespace to avoid eslint warning*/}
-          <a href="#navbar-container"><i class="fa fa-phone" aria-hidden="true"></i> </a>
+          whitespace
         </a>
         <Outlet/>
       </div>

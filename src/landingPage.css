@@ -81,6 +81,8 @@
 #services-section{
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 8vw;
+    background-color: aliceblue;
 }
 .background-width:nth-of-type(odd){
     background-color: aliceblue;
