@@ -10,6 +10,7 @@ import Layout from './layout.js'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
+
 const App = () => {
   
   return (
@@ -20,7 +21,7 @@ const App = () => {
             <Route index element={<LandingPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
-            <Route path="projects" element={<CataloguePage/>}/>
+            <Route path="catalogue" element={<CataloguePage/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>
             {/*<Route path="*" element={<NoPage />} />*/}
           </Route>  

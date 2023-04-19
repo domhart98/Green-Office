@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.3913a196.css",
-    "main.js": "/static/js/main.464394e1.js",
+    "main.css": "/static/css/main.13c26e33.css",
+    "main.js": "/static/js/main.aadafb6b.js",
     "static/js/787.c37e6ef6.chunk.js": "/static/js/787.c37e6ef6.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/background.webp": "/static/media/background.87fa822f9a9ce794eba2.webp",
+    "static/media/vine-border1.png": "/static/media/vine-border1.61cd807f55cb3217ebc5.png",
+    "static/media/vine-border1-reversed.png": "/static/media/vine-border1-reversed.941849f612a96d03139f.png",
+    "static/media/green-office-logo.png": "/static/media/green-office-logo.254c1d07c07a55efb287.png",
     "static/media/grit-texture.png": "/static/media/grit-texture.4c2e0f146f1a5997cba7.png",
+    "static/media/leaf-texture (2).jpg": "/static/media/leaf-texture (2).7b4190a99638c0355d96.jpg",
+    "static/media/phone-icon.png": "/static/media/phone-icon.20a0ed4204215b0502d9.png",
     "index.html": "/index.html",
-    "main.3913a196.css.map": "/static/css/main.3913a196.css.map",
-    "main.464394e1.js.map": "/static/js/main.464394e1.js.map",
+    "main.13c26e33.css.map": "/static/css/main.13c26e33.css.map",
+    "main.aadafb6b.js.map": "/static/js/main.aadafb6b.js.map",
     "787.c37e6ef6.chunk.js.map": "/static/js/787.c37e6ef6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3913a196.css",
-    "static/js/main.464394e1.js"
+    "static/css/main.13c26e33.css",
+    "static/js/main.aadafb6b.js"
   ]
 }

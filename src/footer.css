@@ -1,10 +1,6 @@
-ul{
-    text-align: center;
-}
-
 .footer{
     height: 150px;
-    background-color: aliceblue;
+    background-color: #F8F3EB;
     text-align: center;
     padding-top: 50px;
 }
@@ -12,20 +8,19 @@ ul{
     font-size: .8em;
     font-weight: 200;
 }
-.footer ul{
+.footer>ul{
     margin: auto;
     padding: 0px;
 }
 
-.fa-x2{
-    color: red;
+.fa-2x{
+    color: black;
+}
+.fa-2x:hover{
+    scale: 0.9;
+    transition: 0.4s;
 }
 
-a{
+.footer>ul>li>a{
     margin: 10px;
-    color:black;
-}
-a:hover{
-    opacity: 50%;
-    font-size: 0.9em;
 }

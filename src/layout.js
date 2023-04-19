@@ -1,45 +1,31 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Outlet } from 'react-router'
 import Navbar from './navbar.js'
 import Footer from './footer.js'
 import './layout.css'
 
 const Layout = () =>{
-  const [show, setShow] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [collapsed, setCollapsed] = useState(true);
+  const [hamActive, setHamActive] = useState(false);
 
-  useEffect(() => {
+  const toggleCollapsibleNavbar = () =>{
+      console.log(collapsed + " " + hamActive)
+      setCollapsed(!collapsed)
+      setHamActive(!hamActive)
+  }
   
-      const controlBody = () => {
-        
-              if(window.scrollY > lastScrollY){
-                  setShow(false);
-              }
-              else{
-                  setShow(true);
-              }
-          
-      
-          
-          setLastScrollY(window.scrollY);
-      
-      };
-
-      if (typeof window !== 'undefined') {
-          window.addEventListener('scroll', controlBody);
-  
-          // cleanup function
-          return () => {
-              window.removeEventListener('scroll', controlBody);
-          };
-      }
-    }, [lastScrollY]);
-    return(
-      <div className="wrapper">
-        <Navbar/>
-        <div className={`body-wrapper ${show}`}><Outlet/></div>
-        <Footer/>
+  return(
+    <div className="wrapper">
+      <Navbar collapsed={collapsed} hamActive={hamActive} toggleCollapsibleNavbar={toggleCollapsibleNavbar}/>
+      <div className="body-wrapper">
+        <a className={`close-navbar-toggler ${collapsed ? "hidden" : "show" }`} href="#navbar-container" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleCollapsibleNavbar}>
+          {/* Single whitespace to avoid eslint warning*/}
+          <a href="#navbar-container"><i class="fa fa-phone" aria-hidden="true"></i> </a>
+        </a>
+        <Outlet/>
       </div>
-    );
+      <Footer/>
+    </div>
+  );
 };
 export default Layout;

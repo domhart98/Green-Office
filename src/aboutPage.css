@@ -1,364 +1,203 @@
-.benefit-title>p{
-    position: relative;
-    top: 0px;
-}
-
-.icon>img{
-    margin-top: 0px;
-}
-#list-container{
-    padding: 20px 50px 20px 50px;
-    background: aliceblue;
-}
-.list-item{
-    padding-top: 20px;
-}
-
-#about-page hr{
-    margin: 0px;
-}
-.vr{
-    width: 1px;
-}
-.bg-img{
-    margin: 0px;
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    overflow:hidden;
-    object-fit: cover;
-}
-
+/* About */
 #about-banner{
     position: relative;
     color: white;
     padding: 0px;
-    
 }
-#about-info > h3{
-    text-decoration: 3px solid green underline;
-    text-underline-offset: 7px;
-    text-align: center;
-    background-color: aliceblue;
-    margin-bottom: 20px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: rgba(55,159,10,1);
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+.about-image{
+    margin: 0px;
+    width: 100%;
+    height: 45vw;
+    object-fit: cover;
 }
-
-.list-item.row{
-    padding-bottom: 40px;
-}
-
-#mission-statement{
+#about-banner>div{
     position: absolute;
     top: 50%;
     padding: 10px 0px;
     transform: translate(0%, -50%);
-    background-image: url('~/public/leaf-texture.jpg');
+    background-image: url('~/public/leaf-texture (2).jpg');
     color: white;
     text-align: center;
     font-family: monospace;
 }
-.bolder{
-    font-weight: lighter;
+#about-banner h2{
+    font-size: 3vw;
+    margin: 1vw;
+}
+
+/* About -> Metrics*/
+#metrics-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.metric{
+    width: 33.333%;
+    border: 1px solid lightgray;
+    background-color: aliceblue;
+    text-shadow: 0.2vw 0.2vw 0.3vw gray;
+}
+.metric>h4{
+    display: flex;
+    justify-content: center;
+
+    font-size: 2vw;
+    margin: 1vw 0px 0px 0px;
+}
+.metric>p{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.5vw;
+}
+.metric>p>i{
+    margin: 0.1vw;
+}
+
+/* Mission */
+#mission-section{
+    padding: 0px;
+}
+#mission-header{
+    margin: 0px;
+    font-size: 3vw;
+    text-decoration: 3px solid green underline;
+    text-underline-offset: 7px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10vw;
+    color: rgba(55,159,10,1);
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
-
-.col-sm-4{
-    text-align: center;
-}
-.col-sm-4 > p{
-    margin-bottom: 0px;;
-}
-
-ul{
-    list-style-type: none;
-}
-.list-item{
-    height: auto;
-    text-align: left;
-}
-.list-item>div>.benefit-title{
-    text-decoration: 8px rgb(103, 3, 103) underline;
-    text-underline-offset: 10px;
-    font-family:sans-serif;
-    width: auto;
-    display: inline-block;
-    margin-bottom: 0px;
-}
-
-.item {
-    display: block;
-    clear: both;
-    counter-increment: list;
-    padding-bottom: 4rem;
-    font-size: 1.1rem;
-    line-height: 1.375;
-    position: relative;
-}
-
-.img-smaller{
-    width: 50px;
+#mission-header>.img-smaller{
+    width: 5vw;
     margin: auto;
     opacity: 1.2;
 }
-
-.teardrop {
-    width: 5rem;
-    height: 5rem;
-    float: left;
-    margin: 0 1.5rem 0.75rem 0;
-    color: white;
-    font-weight: bold;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    background: purple linear-gradient(to bottom right, purple 25%, green);
-    text-shadow: 0 0 2px purple;
-    border-radius: 0px 50% 50% 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    shape-outside: ellipse();
-    z-index: 1;
-    box-shadow: 2px 6px 6px rgb(128,128,128,0.3);
-}
-
-.bg-gold-green{
-    position:relative;
-    text-shadow: 2px 2px 4px gray;
+#mission-body{
+    display: flex;
+    padding: 0px 5vw;
     background-color: aliceblue;
-    border: 1px dotted lightgray;
 }
-
-.bg-gold-green>h4{
-    margin-bottom: 0px;
-    padding-top: 10px;
+#mission-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
 }
-.bg-gold-green>p{
-    
-    padding-bottom: 10px;
-    padding-left: 4px;
+#mission-text>p{
+    font-size: 1.4vw;
+    margin: 0px;
+    height: 33%;
+    padding-right: 1.5vw;
+    font-weight: 600;
 }
-.bg-gold-green>p>i{
-    padding-right: 4px;
+#mission-text>p:nth-child(odd){
+    background-color: white;
 }
-
-#nice-area-container{
+#mission-image{
+    position: relative;
+    width: 50%;
+}
+.image-front{
     position: relative;
     margin: 0px;
-    padding-bottom: 0px;
     overflow: hidden;
     object-fit: cover;
-}
-#nice-area{
-    position: relative;
-    margin: 0px;
-    overflow: hidden;
-    object-fit: cover;
-    padding-right: 10px;
-    padding-left: 10px;
     z-index: 1;
     transition: .3s;
     width: 100%;
     height: auto;
 }
-#nice-area-2{
+.image-behind{
     position: absolute;
     margin: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
     top: 0px;
     left: 0px;
     z-index:0;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-#nice-area:hover{
+.image-front:hover{
     opacity: 0;
 }
 
-#services{
-    padding-top: 0px;
-    font-size: .9em;
-    position: relative;
-    align-items: center;
-}
-#services>p:nth-child(odd){
-    background-color: white;
-}
-#services>p:nth-of-type(1){
-    position: absolute;
-    top: 0px;
-}
-#services>p:nth-of-type(2){
-    position: absolute;
-    top: 34%;
-}
-#services>p:nth-of-type(3){
-    position: absolute;
-    bottom: 0px;
-}
-#services>p{
-    font-size:.9em;
-    position: absolute;
-    bottom: 0px;
-    height: 33%;
-}
-#about-info>.gx-0{
-    position: relative;
-    padding-bottom: 10px;
+/* Benefits */
+#benefits-container{
+    padding: 5vw;
     background-color: aliceblue;
-    padding-left: 10px;
 }
-#about-info>.gx-0::before{
-    content: "";
-    background-size: 80px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.15;
+.benefit{
+    display: flex;
+    padding: 5vw;
+}
+.benefit-text{
+    width: 65%;
+}
+.benefit-text>p{
+    font-size: 1.8vw;
+}
+.benefit-image{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.benefit-image>img{
+    width: 90%;
+    height: auto;
+}
+.benefit-title{
+    font-size: 3vw;
+    text-decoration: 1vw rgb(103, 3, 103) underline;
+    text-underline-offset: 1vw;
+    margin-bottom: 1vw;
 }
 
-
-#about-info{
-    padding-left: 0px;
-    padding-right: 0px;
+.teardrop {
+    width: 5vw;
+    height: 5vw;
+    float: left;
+    margin: 4vw 4vw 2vw 0;
+    font-size: 1.6vw;
+    color: white;
+    background: purple linear-gradient(to bottom right, purple 25%, green);
+    text-shadow: 0 0 1vw purple;
+    border-radius: 0px 50% 50% 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 6px 6px rgb(128,128,128,0.3);
 }
-.title-icon{
+
+.benefit-image-mini{
+    width: 10vw;
+    height: auto;
     visibility: hidden;
 }
 
-@media (max-width:900px){
+@media screen and (max-width:576px){
     .benefit-title{
-        font-size: 0.8em;
+        font-size: 4vw;
     }
+    
     .benefit-text{
-        font-size: 0.8em;
+        margin-left: 10%;
+        width: 80%;
     }
-    #services>p{
-        font-size: 0.8em;
+    .benefit-text>p{
+        font-size: 2vw;
     }
-}
-@media (max-width:768px){
-    #services>p{
-        font-size: 0.6em;
+    .benefit-image-mini{
+        visibility: visible;
     }
-    .icon{
+    .benefit-image{
         display: none;
     }
-    .title-icon{
-        visibility: visible;
-    }
-    
-}
-@media (max-width:630px){
-    #services>p{
-        font-size: 0.5em;
+    .teardrop {
+        margin: 4vw 3vw 1vw 0;
     }
 }
-@media screen and (max-width:576px){
-    .benefit-title img{
-        visibility: visible;
-    }
-    .benefit-title{
-        font-size: 1em;
-    }
-    .benefit-text{
-        font-size: 0.7em;
-    }
-    #mission-statement>h2{
-        scale: 0.9;
-    }
-    #services{
-        height: 300px;
-    }
-    #about-info>.gx-0{
-        padding-left: 0px;
-    }
-    #nice-area{
-        padding: 20px;
-    }
-    #nice-area-2{
-        padding: 20px;
-    }
-    #services>p{
-        position: relative;
-        font-size: 0.7em;
-        padding-top: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        height: 110px;
-        margin: 0px;
-    }
 
-    .teardrop{
-        width: 4rem;
-        height: 4rem;
-    }
-    ul{
-        padding-left: 0px !important;
-    }
-}
-@media screen and (min-width: 576px){
-    .benefit-title{
-        font-size: 1.4em;
-    }
-    .bg-gold-green{
-        
-        text-decoration: dashed;
-        
-    }
-    ul{
-        padding-right: 2rem !important;
-    }
-}
-@media (max-width:510px){
-    
-    .teardrop{
-        width: 3rem;
-        height: 3rem;
-    }
-    .list-container>ul{
-        padding-left: 0px;
-    }
-}
-@media (max-width:430px){
-    #about-info > h3{
-        font-size: .9em;;
-    }
-    .benefit-title{
-        font-size: 0.55em;
-        
-    }
-    .benefit-text{
-        font-size: 0.6em;
-    }
-    .teardrop{
-        width: 2.2rem;
-        height: 2.2rem;
-        margin-top: 10px;
-        margin-bottom: 0px;
-        font-size: .5em;
-    }
-    .title-icon{
-        width:50px;
-        height: 50px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .list-item.row{
-        padding: 0px;
-    }
-    .ul{
-        padding: 0px;
-    }
-}
-#about-info{
-    position: relative;
-    background-color: aliceblue;
-}
+
+
+
 
