@@ -6,11 +6,15 @@
 }
 .close-navbar-toggler{
     position:fixed;
+    top:12vw;
     left:0px;
     height: 100%;
     width:100%;
     z-index:-1;
     margin: 0px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 @media only screen and (max-width: 768px){
     .close-navbar-toggler.show{

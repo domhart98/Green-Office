@@ -1,5 +1,5 @@
 #navbar-container{
-    position: sticky;
+    position: relative;
     top: 0px;
     z-index: 2;
 }
@@ -125,7 +125,7 @@
     }
     .nav-link>p{
         margin: 2vw 0px;
-        font-size: 1.6vw;
+        font-size: 1.8vw;
     }
     .navbar-toggler-custom{
         display: block;
