@@ -10,14 +10,14 @@ const CataloguePage = () =>{
             </div>
             <div className="catalogue fancy-border">
                 
-                <div id="carousel-catalogue" className="carousel slide" data-bs-ride="carousel">
+                <div id="carousel-catalogue" className="carousel slide">
                     <div className="carousel-indicators">
-                        <button data-bs-target="#carouselCatalogue" data-bs-slide-to="0" className="active"></button>
-                        <button data-bs-target="#carouselCatalogue" data-bs-slide-to="1" className=""></button>
-                        <button data-bs-target="#carouselCatalogue" data-bs-slide-to="2" className=""></button>
-                        <button data-bs-target="#carouselCatalogue" data-bs-slide-to="3" className=""></button>
-                        <button data-bs-target="#carouselCatalogue" data-bs-slide-to="4" className=""></button>
-                        <button data-bs-target="#carouselCatalogue" data-bs-slide-to="5" className=""></button>
+                        <button data-bs-target="#carousel-catalogue" data-bs-slide-to="0" className="active"></button>
+                        <button data-bs-target="#carousel-catalogue" data-bs-slide-to="1" className=""></button>
+                        <button data-bs-target="#carousel-catalogue" data-bs-slide-to="2" className=""></button>
+                        <button data-bs-target="#carousel-catalogue" data-bs-slide-to="3" className=""></button>
+                        <button data-bs-target="#carousel-catalogue" data-bs-slide-to="4" className=""></button>
+                        <button data-bs-target="#carousel-catalogue" data-bs-slide-to="5" className=""></button>
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -39,11 +39,11 @@ const CataloguePage = () =>{
                             <img id="carousel-img" className="d-blocl w-100" src={'./ansa-mcal (7).jpg'} alt="Ansa McAl" width="200px" height="200px"/>
                         </div>
                     </div>
-                    <a className="carousel-control-prev" href="#carouselCatalogue" role="button" data-bs-slide="prev">
+                    <a className="carousel-control-prev" href="#carousel-catalogue" role="button" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon carousel-control" aria-hidden="true"></span>
                         <span className="sr-only">Previous</span>
                     </a>
-                    <a className="carousel-control-next" href="#carouselCatalogue" role="button" data-bs-slide="next">
+                    <a className="carousel-control-next" href="#carousel-catalogue" role="button" data-bs-slide="next">
                         <span className="carousel-control-next-icon carousel-control" aria-hidden="true"></span>
                         <span className="sr-only">Next</span>
                     </a>
